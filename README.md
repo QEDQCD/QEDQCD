@@ -19,11 +19,17 @@
 - 熟悉从 **需求分析、方案设计、接口开发、工作流编排、模型接入、部署上线、测试与文档沉淀** 的完整链路。
 - 关注把 AI 能力做成可交付的工程系统，而不是只停留在 Demo 阶段。
 
-## GitHub Stats
+## Focus Areas
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=QEDQCD&show_icons=true&theme=default&hide_border=true" alt="github stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=QEDQCD&layout=compact&theme=default&hide_border=true" alt="top langs" />
+
+| Direction | What I Care About |
+| --- | --- |
+| AI Application Engineering | 把 RAG、Agent、工作流编排、多模型接入做成可落地系统 |
+| Backend Architecture | 做清晰的接口边界、任务模型、权限体系和稳定的数据链路 |
+| Cloud Native Platform | 在 Kubernetes 平台上建设调度、治理、可观测与自动化能力 |
+| Engineering Delivery | 重视测试、文档、部署、排障和长期可维护性 |
+
 </div>
 
 ## Tech Stack
