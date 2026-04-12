@@ -120,6 +120,17 @@
 - 亮点：参与 **弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理** 等平台能力建设
 - 方向：面向企业级算力云平台的系统化工程实践
 
+### 5. huangxudong-skill
+
+> 面向 Codex / Agent 场景的人物视角 Skill，模拟黄旭东式内容操盘、社区判断与嘴硬型回应风格
+
+- 技术栈：`Markdown` + `Prompt Engineering` + `Persona Modeling` + `Research Workflow` + `Python Scripts`
+- 工程特征：围绕 **角色规则、表达 DNA、场景路由、决策启发式、时间线与研究资料** 构建可复用 Skill 包
+- 亮点：把公开语料、论坛发帖、事件时间线与人物表达特征沉淀成 **可运行的角色化 Agent 能力**
+- 方向：探索 **Persona Skill Engineering**，把人物视角、风格控制与任务场景结合成可交付资产
+
+[Repository](https://github.com/QEDQCD/huangxudong-skill)
+
 ## Engineering Keywords
 
 - **AI 应用工程化**：Prompt 设计、多模型接入、工作流编排、Agent 协作、RAG 链路落地
