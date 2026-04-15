@@ -131,6 +131,17 @@
 
 [Repository](https://github.com/QEDQCD/huangxudong-skill)
 
+### 6. free-code
+
+> Claude Code 的自由构建版本，面向终端原生 AI 编码代理的可构建分叉
+
+- 技术栈：`TypeScript` + `Bun` + `React` + `Ink` + `CLI Engineering` + `OpenAI Codex` + `Anthropic`
+- 工程特征：移除遥测与额外提示护栏，保留 CLI 主体能力，并打通 **Anthropic、OpenAI Codex、AWS Bedrock、Google Vertex AI、Anthropic Foundry** 多提供方接入
+- 亮点：支持 **实验特性解锁、Codex 后端适配、终端 UI 推理动画与计费信息对齐，以及 agent / skill / bridge 能力扩展**
+- 方向：探索更自由、可审计、可自行构建的 AI Coding Agent 工程实现
+
+[Repository](https://github.com/QEDQCD/free-code)
+
 ## Engineering Keywords
 
 - **AI 应用工程化**：Prompt 设计、多模型接入、工作流编排、Agent 协作、RAG 链路落地
