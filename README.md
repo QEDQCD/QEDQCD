@@ -1,10 +1,10 @@
-# Hi, I'm 李文健
+# 李文健
 
 <div align="center">
 
-**AI 应用工程师 / Python & Go 开发者 / 云原生工程实践者**
+**AI 应用与平台工程实践者**
 
-聚焦 **RAG、Multi-Agent、LangGraph、知识库系统、Kubernetes 平台工程、算力与调度系统**
+聚焦 **RAG、Agent Workflow、知识系统、分类标引、情报处理平台、Kubernetes 平台工程与算力治理**
 
 [![GitHub](https://img.shields.io/badge/GitHub-QEDQCD-181717?style=flat-square&logo=github)](https://github.com/QEDQCD)
 [![Email](https://img.shields.io/badge/Email-594253850%40qq.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:594253850@qq.com)
@@ -12,150 +12,101 @@
 
 </div>
 
-## About Me
+## 关于我
 
-- 5 年开发经验，长期从事 **Python / Go 后端开发、AI 应用落地、云平台与 Kubernetes 相关工程建设**。
-- 做过 **RAG 平台、叙词分类系统、多 Agent 情报处理平台、K8s 算力云平台、OpenStack 公有云、网络安全靶场**。
-- 熟悉从 **需求分析、方案设计、接口开发、工作流编排、模型接入、部署上线、测试与文档沉淀** 的完整链路。
-- 关注把 AI 能力做成可交付的工程系统，而不是只停留在 Demo 阶段。
+- 5 年开发经验，长期聚焦 **AI 应用工程、后端系统建设与云原生平台实践**，关注如何把模型能力落到真实业务流程中。
+- 我擅长把 **检索、工作流、模型调用、权限体系、任务机制、部署交付** 打通，做成可上线、可维护、可持续迭代的工程系统。
+- 过去的实践覆盖 **RAG 平台、分类与叙词服务、多 Agent 情报处理平台、Kubernetes 算力云平台、OpenStack 公有云与复杂业务平台**。
+- 相比只停留在模型接入和 Prompt 调整，我更关注 **系统边界、链路可追踪性、质量控制、失败恢复、评估闭环与长期维护成本**。
 
-## Focus Areas
+## AI 工程能力
 
-<div align="center">
+- **AI 应用系统化落地**：围绕 RAG、Agent Workflow、多模型接入与工具调用构建完整链路，关注可追踪、可回放、可干预，而不是只追求“调用成功”。
+- **后端与平台整合能力**：能够把 AI 能力嵌入权限体系、租户隔离、任务编排、异步处理与管理后台，形成真正可运营的业务系统。
+- **生产可用性与交付质量**：重视评估、日志、失败重试、结果校验、部署文档与线上排障，把 AI 系统做成可维护资产，而不是一次性 Demo。
+- **云原生与资源治理背景**：具备 Kubernetes、资源调度、服务治理与平台工程经验，能从基础设施视角思考 AI 系统的伸缩性、可靠性与运行成本。
 
-| Direction | What I Care About |
-| --- | --- |
-| AI Application Engineering | 把 RAG、Agent、工作流编排、多模型接入做成可落地系统 |
-| Backend Architecture | 做清晰的接口边界、任务模型、权限体系和稳定的数据链路 |
-| Cloud Native Platform | 在 Kubernetes 平台上建设调度、治理、可观测与自动化能力 |
-| Engineering Delivery | 重视测试、文档、部署、排障和长期可维护性 |
+## 技术领域
 
-</div>
+- **AI 系统**：`RAG`、`Agent Workflow`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
+- **后端工程**：`Python`、`Go`、`Django`、`DRF`、`Flask`、`Gin`、`gRPC`、`MySQL`、`PostgreSQL`、`Redis`、`Elasticsearch`
+- **平台与基础设施**：`Docker`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Istio`、`Prometheus`、`OpenStack`
+- **前端与交付**：`Vue 3`、`React`、`TypeScript`、`Vite`、`Umi`、`Playwright`、`Docker Compose`
 
-## Tech Stack
-
-### AI / LLM
-
-![RAG](https://img.shields.io/badge/RAG-2F6BFF?style=flat-square)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent-0F9D58?style=flat-square)
-![LangGraph](https://img.shields.io/badge/LangGraph-121212?style=flat-square)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
-![Dify](https://img.shields.io/badge/Dify-4F46E5?style=flat-square)
-![MCP](https://img.shields.io/badge/MCP-FF6B35?style=flat-square)
-![GraphRAG](https://img.shields.io/badge/GraphRAG-7B61FF?style=flat-square)
-![RAGFlow](https://img.shields.io/badge/RAGFlow-009688?style=flat-square)
-![Weaviate](https://img.shields.io/badge/Weaviate-00A98F?style=flat-square&logo=weaviate&logoColor=white)
-![vLLM](https://img.shields.io/badge/vLLM-1F2937?style=flat-square)
-
-### Backend / Infra
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![DRF](https://img.shields.io/badge/DRF-A30000?style=flat-square)
-![Gin](https://img.shields.io/badge/Gin-008ECF?style=flat-square&logo=gin&logoColor=white)
-![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat-square)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
-
-### Frontend / Platform
-
-![Vue 3](https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Umi](https://img.shields.io/badge/Umi-1677FF?style=flat-square)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Kubebuilder](https://img.shields.io/badge/Kubebuilder-326CE5?style=flat-square)
-![KubeVirt](https://img.shields.io/badge/KubeVirt-FE6A16?style=flat-square)
-![Istio](https://img.shields.io/badge/Istio-466BB0?style=flat-square&logo=istio&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![OpenStack](https://img.shields.io/badge/OpenStack-ED1944?style=flat-square&logo=openstack&logoColor=white)
-
-## What I Build
+## 代表性项目
 
 ### 1. 情报工坊 / Intelligence Workshop
 
-> 多租户情报采集、翻译、导入导出一体化平台
+> 面向情报采集、翻译、导入导出与交付流程的多租户业务平台
 
-- 技术栈：`Django` + `Django REST Framework` + `Vue 3` + `Vite` + `Pinia` + `PostgreSQL` + `Redis` + `Playwright` + `Docker`
-- 工程特征：支持 **租户隔离、RBAC、采集任务管理、翻译任务编排、批量导入导出、质量评估、失败重放**
-- 亮点：独立 `crawler_agent` 支持 **RSS / Sitemap / HTML 列表页 / 动态页面抓取**，形成“中心配置 + 边缘执行”的采集模式
-- 方向：把情报采集、翻译、知识沉淀和交付流程做成可运营的平台
+- **关键问题**：需要同时处理租户隔离、RBAC、采集任务管理、翻译流程编排、批量导入导出与失败重放，不能只做单点功能。
+- **我的实现**：基于 `Django`、`DRF`、`Vue 3`、`PostgreSQL`、`Redis` 与 `Playwright` 搭建完整平台，并通过独立 `crawler_agent` 支持 RSS、Sitemap、HTML 列表页与动态页面抓取，形成“中心配置 + 边缘执行”的采集模式。
+- **工程价值**：把情报采集、翻译、知识沉淀和交付流程整合成可运营系统，而不是离散脚本和人工流程。
 
-[Repository](https://github.com/QEDQCD/ai_translate)
+[项目地址](https://github.com/QEDQCD/ai_translate)
 
-### 2. RAGFlow智能知识增强平台
+### 2. RAGFlow 智能知识增强平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
-- 技术栈：`Python` + `Flask` + `Peewee` + `React 18` + `Umi 4` + `TypeScript` + `Elasticsearch` + `GraphRAG` + `MCP` + `Docker Compose`
-- 工程特征：统一打通 **复杂文档解析、分块构建、知识索引、混合检索、答案生成、图谱增强、Web 管理台**
-- 亮点：支持 **PDF / Office / 图片等复杂文档处理**，并具备 **GraphRAG、多步推理、MCP 工具化输出**
-- 方向：把 RAG 做成平台能力，而不是单点问答接口
+- **关键问题**：复杂文档解析、知识索引构建、混合检索、答案生成与图谱增强需要统一在同一套平台能力中，而不是分散在多个孤立模块里。
+- **我的实现**：基于 `Python`、`Flask`、`React 18`、`TypeScript`、`Elasticsearch`、`GraphRAG` 与 `MCP` 打通文档解析、分块构建、索引管理、混合检索、图谱增强和 Web 管理台。
+- **工程价值**：把 RAG 从单点问答接口升级为平台能力，支持 PDF、Office、图片等复杂文档处理，以及多步推理和工具化输出。
 
-[Repository](https://github.com/QEDQCD/INIS)
+[项目地址](https://github.com/QEDQCD/INIS)
 
 ### 3. 分类与叙词服务
 
 > 基于 LangGraph 的科技文献叙词标注与智能分类系统
 
-- 技术栈：`Django` + `DRF` + `LangGraph` + `Weaviate` + `RAGFlow` + `Volcano Ark` + `DashScope`
-- 工程特征：围绕 **关键词抽取 -> 知识库匹配 -> 联网增强 -> LLM 验证 -> 格式约束** 建立可追踪工作流
-- 亮点：叙词流程与分类流程分离设计，支持 **多级分类、结果纠错、流程日志、失败兜底、多源检索融合**
-- 成果：分类与叙词关键字段准确率从 **50% 提升到 85%**
+- **关键问题**：分类与叙词并不是单次模型调用，而是涉及关键词抽取、知识库匹配、联网增强、LLM 验证、格式约束与失败兜底的多阶段工作流。
+- **我的实现**：基于 `Django`、`DRF`、`LangGraph`、`Weaviate`、`RAGFlow`、`Volcano Ark` 与 `DashScope` 将叙词流程与分类流程分离设计，形成可追踪、可纠错、可扩展的链路。
+- **工程价值**：通过多源检索融合、流程日志、结果纠错与结构化约束，将分类与叙词关键字段准确率从 **50% 提升到 85%**。
 
-[Repository](https://github.com/QEDQCD/inis_classify)
+[项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 4.  AI cloud
+### 4. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
-- 技术栈：`Go` + `Gin` + `GORM` + `gRPC` + `Kubernetes` + `Kubebuilder` + `KubeVirt` + `Kube-OVN` + `Istio` + `Knative` + `Crossplane`
-- 工程特征：覆盖 **计算、网络、存储、商城、调度、治理、Webhook、CRD/Controller、Kustomize 交付**
-- 亮点：参与 **弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理** 等平台能力建设
-- 方向：面向企业级算力云平台的系统化工程实践
+- **关键问题**：企业级算力平台需要同时覆盖计算、网络、存储、调度、治理、Webhook、CRD/Controller 与交付体系，重点是平台能力建设，而不是单个接口开发。
+- **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
+- **工程价值**：补足了我在 AI 系统之外的资源治理与平台工程背景，使我在设计 AI 系统时更重视伸缩性、可靠性与运行成本。
 
 ### 5. huangxudong-skill
 
-> 面向 Codex / Agent 场景的人物视角 Skill，模拟黄旭东式内容操盘、社区判断与嘴硬型回应风格
+> 面向 Codex / Agent 场景的人物视角 Skill，探索 Persona Skill Engineering 的可运行封装方式
 
-- 技术栈：`Markdown` + `Prompt Engineering` + `Persona Modeling` + `Research Workflow` + `Python Scripts`
-- 工程特征：围绕 **角色规则、表达 DNA、场景路由、决策启发式、时间线与研究资料** 构建可复用 Skill 包
-- 亮点：把公开语料、论坛发帖、事件时间线与人物表达特征沉淀成 **可运行的角色化 Agent 能力**
-- 方向：探索 **Persona Skill Engineering**，把人物视角、风格控制与任务场景结合成可交付资产
+- **关键问题**：如何把公开语料、表达风格、人物时间线与决策启发式沉淀成可复用、可调用的 Agent 能力，而不是停留在提示词堆叠。
+- **我的实现**：围绕角色规则、表达 DNA、场景路由、研究资料与脚本工具构建可复用 Skill 包，支持更稳定的人物风格控制和任务适配。
+- **工程价值**：这是我对 Persona Modeling、Prompt Engineering 与 Agent 可交付资产化的一次工程化探索。
 
-[Repository](https://github.com/QEDQCD/huangxudong-skill)
+[项目地址](https://github.com/QEDQCD/huangxudong-skill)
 
 ### 6. free-code
 
-> Claude Code 的自由构建版本，面向终端原生 AI 编码代理的可构建分叉
+> 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
-- 技术栈：`TypeScript` + `Bun` + `React` + `Ink` + `CLI Engineering` + `OpenAI Codex` + `Anthropic`
-- 工程特征：移除遥测与额外提示护栏，保留 CLI 主体能力，并打通 **Anthropic、OpenAI Codex、AWS Bedrock、Google Vertex AI、Anthropic Foundry** 多提供方接入
-- 亮点：支持 **实验特性解锁、Codex 后端适配、终端 UI 推理动画与计费信息对齐，以及 agent / skill / bridge 能力扩展**
-- 方向：探索更自由、可审计、可自行构建的 AI Coding Agent 工程实现
+- **关键问题**：AI Coding Agent 不只是模型切换，还涉及终端交互、后端适配、能力扩展与可审计构建链路。
+- **我的实现**：基于 `TypeScript`、`Bun`、`React`、`Ink` 与多模型后端接入，完成 Codex 适配、UI 推理状态对齐，以及 agent / skill / bridge 的扩展实践。
+- **工程价值**：这类项目体现了我对 AI Agent 运行机制、能力封装与开发者工具链的持续深入探索。
 
-[Repository](https://github.com/QEDQCD/free-code)
+[项目地址](https://github.com/QEDQCD/free-code)
 
-## Engineering Keywords
+## 工程判断
 
-- **AI 应用工程化**：Prompt 设计、多模型接入、工作流编排、Agent 协作、RAG 链路落地
-- **平台后端开发**：RESTful API、RPC/gRPC、权限设计、租户隔离、异步任务、状态机
-- **云原生与基础设施**：Kubernetes、CRD / Operator、KubeVirt、服务治理、弹性伸缩、可观测性
-- **复杂系统交付**：Docker / Compose、CI/CD、测试用例、部署文档、问题排查与线上迭代
+- 我关注的不只是模型能否调用成功，而是 **检索质量、工作流可追踪性、结果一致性与系统可控性**。
+- 我倾向于把 AI 能力封装成 **可测试、可观测、可回放、可持续优化** 的系统组件，而不是一次性脚本。
+- 我在设计 AI 应用时，会同时考虑 **任务编排、权限边界、失败恢复、评估机制与长期维护成本**。
+- 我重视的不只是“做出功能”，还包括 **部署、文档、排障、治理与持续交付能力**。
 
-## Experience Snapshot
+## 经验概览
 
-- 当前主要方向是 **AI 应用 + 云平台工程** 的结合，包括知识库系统、分类标引、情报处理平台和算力云平台。
-- 有 **OpenStack 公有云、网络升级、K8s 平台、网络安全攻防靶场、大数据平台** 等复杂项目经验。
-- 参与过 OpenStack 社区问题修复与代码贡献，也长期重视测试、文档和工程规范。
+- 当前主要方向是 **AI 应用工程与平台工程的结合**，包括知识系统、分类标引、情报处理平台和算力治理平台。
+- 具备 **OpenStack 公有云、Kubernetes 平台、网络升级、网络安全靶场与复杂业务系统** 的持续工程经验。
+- 长期关注 **AI 系统如何真正进入生产环境**，以及如何在复杂基础设施中保持稳定、可维护和可演进。
 
-## Contact
+## 联系方式
 
 - Email: `594253850@qq.com`
 - GitHub: [QEDQCD](https://github.com/QEDQCD)
@@ -165,6 +116,6 @@
 
 <div align="center">
 
-**把 AI 能力做成稳定、可维护、可交付的工程系统。**
+**我关注的不只是把模型接入业务，而是把 AI 能力沉淀为可评估、可运营、可持续迭代的工程系统。**
 
 </div>
