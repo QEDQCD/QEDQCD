@@ -83,7 +83,17 @@
 
 [项目地址](https://github.com/QEDQCD/huangxudong-skill)
 
-### 6. free-code
+### 6. zhusujin-skill
+
+> 面向《新三国》抽象影射机制的主题 Skill，探索“文风模仿”如何工程化为可运行的生成系统
+
+- **关键问题**：如果只是模仿几句名场面台词，很容易停留在表层口癖复读，无法稳定完成“分析台词机制”“把现实事件改写成影射体”这类真实任务。
+- **我的实现**：围绕任务路由、核心生成机制、表达 DNA 与研究资料构建完整 Skill 包，让 Agent 能先判断用户是在分析台词、生成台词，还是把现实权力关系改写成《新三国》式组织影射。
+- **工程价值**：把一个高语境、强梗化的互联网文风，从“像不像”升级为“能不能稳定运行”的生成系统，体现了我在 Persona / Style Skill Engineering 与任务结构化设计上的持续探索。
+
+[项目地址](https://github.com/QEDQCD/zhusujin-skill)
+
+### 7. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
