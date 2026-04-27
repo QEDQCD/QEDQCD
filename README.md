@@ -35,7 +35,17 @@
 
 ## 代表性项目
 
-### 1. 情报工坊 / Intelligence Workshop
+### 1. AI Gateway
+
+> 面向多模型接入、统一鉴权、调用观测与 RAG 能力整合的平台型 AI 网关
+
+- **关键问题**：企业内部接入多家模型供应商时，不能把上游凭据直接暴露给业务方，也不能把 API Key 管理、模型路由、调用观测、审计追踪和知识库能力拆成彼此割裂的孤立系统。
+- **我的实现**：基于 `Go`、`Python`、`React`、`PostgreSQL`、`Redis` 与 `RabbitMQ` 组织 `gateway`、`rag-service`、`web` 三个核心服务，打通平台 API Key 生命周期、模型代理路由、调用统计审计和 RAG 服务，并提供可直接部署的 Compose 方案。
+- **工程价值**：把“接模型”升级为“管模型、管调用、管权限、管知识”的平台能力，体现了我在 AI 基础设施、平台治理和应用落地之间做系统整合的能力。
+
+[项目地址](https://github.com/QEDQCD/ai_gateway)
+
+### 2. 情报工坊 / Intelligence Workshop
 
 > 面向情报采集、翻译、导入导出与交付流程的多租户业务平台
 
@@ -45,7 +55,7 @@
 
 [项目地址](https://github.com/QEDQCD/ai_translate)
 
-### 2. RAGFlow 智能知识增强平台
+### 3. RAGFlow 智能知识增强平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -55,7 +65,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 3. 分类与叙词服务
+### 4. 分类与叙词服务
 
 > 基于 LangGraph 的科技文献叙词标注与智能分类系统
 
@@ -65,7 +75,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 4. AI cloud
+### 5. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
@@ -73,7 +83,7 @@
 - **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
 - **工程价值**：补足了我在 AI 系统之外的资源治理与平台工程背景，使我在设计 AI 系统时更重视伸缩性、可靠性与运行成本。
 
-### 5. huangxudong-skill
+### 6. huangxudong-skill
 
 > 面向 Codex / Agent 场景的人物视角 Skill，探索 Persona Skill Engineering 的可运行封装方式
 
@@ -83,7 +93,7 @@
 
 [项目地址](https://github.com/QEDQCD/huangxudong-skill)
 
-### 6. zhusujin-skill
+### 7. zhusujin-skill
 
 > 面向《新三国》抽象影射机制的主题 Skill，探索“文风模仿”如何工程化为可运行的生成系统
 
@@ -93,7 +103,7 @@
 
 [项目地址](https://github.com/QEDQCD/zhusujin-skill)
 
-### 7. free-code
+### 8. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
