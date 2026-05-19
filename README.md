@@ -49,7 +49,17 @@
 
 [项目地址](https://github.com/QEDQCD/ai_gateway)
 
-### 2. 情报工坊 / Intelligence Workshop
+### 2. codex-go
+
+> 通过微信机器人接管 Codex 会话，并提供 Web 与 Docker 化部署能力的远程编码工具
+
+- **关键问题**：Codex 交互通常绑定在本机终端，无法在移动端自然地审批权限、查看回复和切换会话。
+- **我的实现**：基于 `Go`、`React`、`Gin`、`Docker` 与 `WeChat Bot API`，把 Codex 会话管理、微信消息收发、Web 控制台和多平台发版流程整合成一个可部署项目。
+- **工程价值**：把“本机 AI Coding”扩展成“手机可控、可部署、可发布”的协作工具，体现了我在 Agent 工程、远程控制和交付链路上的整合能力。
+
+[项目地址](https://github.com/QEDQCD/codex-go)
+
+### 3. 情报工坊 / Intelligence Workshop
 
 > 面向情报采集、翻译、导入导出与交付流程的多租户业务平台
 
@@ -59,7 +69,7 @@
 
 [项目地址](https://github.com/QEDQCD/ai_translate)
 
-### 3. RAGFlow 智能知识增强平台
+### 4. RAGFlow 智能知识增强平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -69,7 +79,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 4. 分类与叙词服务
+### 5. 分类与叙词服务
 
 > 基于 LangGraph 的科技文献叙词标注与智能分类系统
 
@@ -79,7 +89,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 5. AI cloud
+### 6. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
@@ -87,7 +97,7 @@
 - **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
 - **工程价值**：补足了我在 AI 系统之外的资源治理与平台工程背景，使我在设计 AI 系统时更重视伸缩性、可靠性与运行成本。
 
-### 6. huangxudong-skill
+### 7. huangxudong-skill
 
 > 面向 Codex / Agent 场景的人物视角 Skill，探索 Persona Skill Engineering 的可运行封装方式
 
@@ -97,7 +107,7 @@
 
 [项目地址](https://github.com/QEDQCD/huangxudong-skill)
 
-### 7. zhusujin-skill
+### 8. zhusujin-skill
 
 > 面向《新三国》抽象影射机制的主题 Skill，探索“文风模仿”如何工程化为可运行的生成系统
 
@@ -107,7 +117,7 @@
 
 [项目地址](https://github.com/QEDQCD/zhusujin-skill)
 
-### 8. free-code
+### 9. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
