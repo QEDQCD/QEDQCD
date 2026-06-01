@@ -97,27 +97,9 @@
 - **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
 - **工程价值**：补足了我在 AI 系统之外的资源治理与平台工程背景，使我在设计 AI 系统时更重视伸缩性、可靠性与运行成本。
 
-### 7. huangxudong-skill
+https://github.com/QEDQCD/zhusujin-skill)
 
-> 面向 Codex / Agent 场景的人物视角 Skill，探索 Persona Skill Engineering 的可运行封装方式
-
-- **关键问题**：如何把公开语料、表达风格、人物时间线与决策启发式沉淀成可复用、可调用的 Agent 能力，而不是停留在提示词堆叠。
-- **我的实现**：围绕角色规则、表达 DNA、场景路由、研究资料与脚本工具构建可复用 Skill 包，支持更稳定的人物风格控制和任务适配。
-- **工程价值**：这是我对 Persona Modeling、Prompt Engineering 与 Agent 可交付资产化的一次工程化探索。
-
-[项目地址](https://github.com/QEDQCD/huangxudong-skill)
-
-### 8. zhusujin-skill
-
-> 面向《新三国》抽象影射机制的主题 Skill，探索“文风模仿”如何工程化为可运行的生成系统
-
-- **关键问题**：如果只是模仿几句名场面台词，很容易停留在表层口癖复读，无法稳定完成“分析台词机制”“把现实事件改写成影射体”这类真实任务。
-- **我的实现**：围绕任务路由、核心生成机制、表达 DNA 与研究资料构建完整 Skill 包，让 Agent 能先判断用户是在分析台词、生成台词，还是把现实权力关系改写成《新三国》式组织影射。
-- **工程价值**：把一个高语境、强梗化的互联网文风，从“像不像”升级为“能不能稳定运行”的生成系统，体现了我在 Persona / Style Skill Engineering 与任务结构化设计上的持续探索。
-
-[项目地址](https://github.com/QEDQCD/zhusujin-skill)
-
-### 9. free-code
+### 7. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
