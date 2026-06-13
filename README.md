@@ -43,23 +43,38 @@
 - **我的实现**：基于 `Go`、`Python`、`React`、`PostgreSQL`、`Redis` 与 `RabbitMQ` 组织 `gateway`、`rag-service`、`web` 三个核心服务，打通平台 API Key 生命周期、模型代理路由、调用统计审计和 RAG 服务，并提供可直接部署的 Compose 方案。
 - **工程价值**：将模型接入能力抽象为统一的平台底座，覆盖模型治理、调用管控、权限隔离与知识服务集成，体现 AI 基础设施与平台化落地的系统整合能力。
 - **公网访问**：
-  - 控制台前端：`http://8.148.70.187:45287`
-  - Gateway API：`http://8.148.70.187:46819`
+  - 控制台前端：`http://8.162.21.158:31873`
   - 公网入口已配置安全组来源 IP 白名单限制，访问前需要先申请放行。
 
 [项目地址](https://github.com/QEDQCD/ai_gateway)
 
-### 2. codex-go
+### 2. cc-go
+
+> 通过微信机器人接管 Claude Code 会话，并提供 Web 管理面板与多平台发版的远程编码工具
+
+- **关键问题**：Claude Code 交互通常绑定在本机终端，离开电脑后难以及时审批工具权限、查看回复和切换会话。
+- **我的实现**：基于 `Go`、`React`、`Gin` 与 `WeChat Bot API`，通过 `stream-json` 协议桥接 Claude Code CLI，整合微信消息收发、权限审批、会话管理、Skills 自动注入、Web 控制台与 Bot API。
+- **工程价值**：把本地 Claude Code 能力扩展为可远程接入、可移动审批、可部署交付的工程化工具，和 codex-go 共用同一套远程桥接架构。
+- **公网访问**：
+  - Web 管理台：`http://8.162.21.158:18080`
+  - 公网入口已配置安全组来源 IP 白名单限制，访问前需要先申请放行。
+
+[项目地址](https://github.com/QEDQCD/cc-go)
+
+### 3. codex-go
 
 > 通过微信机器人接管 Codex 会话，并提供 Web 与 Docker 化部署能力的远程编码工具
 
 - **关键问题**：Codex 交互通常绑定在本机终端，无法在移动端自然地审批权限、查看回复和切换会话。
 - **我的实现**：基于 `Go`、`React`、`Gin`、`Docker` 与 `WeChat Bot API`，把 Codex 会话管理、微信消息收发、Web 控制台和多平台发版流程整合成一个可部署项目。
 - **工程价值**：将本地 AI Coding 能力扩展为可远程接入、可部署交付、可多端协同的工程化工具，体现 Agent 运行控制、终端接入适配与交付链路整合能力。
+- **公网访问**：
+  - Web 管理台：`http://8.162.21.158:44262`
+  - 公网入口已配置安全组来源 IP 白名单限制，访问前需要先申请放行。
 
 [项目地址](https://github.com/QEDQCD/codex-go)
 
-### 3. 情报工坊 / Intelligence Workshop
+### 4. 情报工坊 / Intelligence Workshop
 
 > 面向情报采集、翻译、导入导出与交付流程的多租户业务平台
 
@@ -69,7 +84,7 @@
 
 [项目地址](https://github.com/QEDQCD/ai_translate)
 
-### 4. RAGFlow 智能知识增强平台
+### 5. RAGFlow 智能知识增强平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -79,7 +94,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 5. 分类与叙词服务
+### 6. 分类与叙词服务
 
 > 基于 LangGraph 的科技文献叙词标注与智能分类系统
 
@@ -89,7 +104,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 6. AI cloud
+### 7. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
@@ -97,9 +112,9 @@
 - **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
 - **工程价值**：体现资源治理与平台工程能力在 AI 场景之外的延展性，为 AI 系统设计提供了伸缩性、可靠性与成本控制方面的工程基础。
 
-https://github.com/QEDQCD/zhusujin-skill)
+[项目地址](https://github.com/QEDQCD/zhusujin-skill)
 
-### 7. free-code
+### 8. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
