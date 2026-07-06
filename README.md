@@ -32,7 +32,7 @@
 ## 技术领域
 
 - **AI 系统**：`RAG`、`Agent Workflow`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
-- **平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`codex-go`（Go / React / WebSocket，Codex 远程编码）
+- **自研平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`cc-go`（Go / React / WebSocket，Claude Code 远程编码）
 - **后端工程**：`Python`、`Go`、`Django`、`DRF`、`Flask`、`Gin`、`gRPC`、`MySQL`、`PostgreSQL`、`Redis`、`Elasticsearch`
 - **平台与基础设施**：`Docker`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Istio`、`Prometheus`、`OpenStack`
 - **前端与交付**：`Vue 3`、`React`、`TypeScript`、`Vite`、`Umi`、`Playwright`、`Docker Compose`
@@ -88,7 +88,17 @@
 
 [项目地址](https://github.com/QEDQCD/ai_translate)
 
-### 5. RAGFlow 智能知识增强平台
+### 5. claude-token-stats
+
+> 面向 Claude Code 的 token 用量自动记录与多维度统计 skill，支持自然语言触发查询
+
+- **关键问题**：Claude Code 会话结束后 token 消耗分散在 transcript 中，缺少按天/周/月、按 session、按模型的可查询汇总，难以评估使用成本与优化方向。
+- **我的实现**：基于 `Python` 与 Claude Code Stop hook，在每次会话结束时自动提取 assistant 消息的 `usage` 字段并去重写入 `~/.claude/token_usage.jsonl`，提供按天/周/月分桶、本地时区转换、session/模型/日期区间过滤及定价估算等统计脚本。
+- **工程价值**：将 token 用量从不可见的会话细节转化为可查询、可对比、可追踪的本地数据资产，导入 skill 后可直接用自然语言问「本月用了多少 token」「哪个 session 最费 token」。
+
+[项目地址](https://github.com/QEDQCD/claude_token_stats)
+
+### 6. RAGFlow 智能知识增强平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -98,7 +108,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 6. 智能分类服务
+### 7. 智能分类服务
 
 > 基于 LangGraph 的科技文献智能分类系统
 
@@ -108,7 +118,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 7. AI cloud
+### 8. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
@@ -118,7 +128,7 @@
 
 [项目地址](https://github.com/QEDQCD/zhusujin-skill)
 
-### 8. free-code
+### 9. free-code
 
 > 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
 
@@ -138,7 +148,6 @@
 ## 经验概览
 
 - 当前主要方向是 **AI 应用工程与平台工程的结合**，包括知识系统、分类标引、情报处理平台和算力治理平台。
-- 已落地 **AI Gateway**（面向企业与团队的租户制 AI API 接入平台，统一多模型出口、Key 治理与调用审计）和 **codex-go**（通过微信机器人远程接管 Codex，支持手机端权限审批、会话切换与 Docker 化部署）。
 - 具备 **OpenStack 公有云、Kubernetes 平台、网络升级、网络安全靶场与复杂业务系统** 的持续工程经验。
 - 长期关注 **AI 系统如何真正进入生产环境**，以及如何在复杂基础设施中保持稳定、可维护和可演进。
 
