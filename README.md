@@ -16,12 +16,15 @@
 
 - 5 年开发经验，长期聚焦 **AI 应用工程、后端系统建设与云原生平台实践**，关注如何把模型能力落到真实业务流程中。
 - 擅长把 **检索、工作流、模型调用、权限体系、任务机制、部署交付** 打通，做成可上线、可维护、可持续迭代的工程系统。
-- 过去的实践覆盖 **RAG 平台、分类与叙词服务、多 Agent 情报处理平台、Kubernetes 算力云平台、OpenStack 公有云与复杂业务平台**。
+- 过去的实践覆盖 **RAG 平台、智能分类服务、多 Agent 情报处理平台、Kubernetes 算力云平台、OpenStack 公有云与复杂业务平台**。
+- 近期落地 **AI Gateway**（面向企业与团队的租户制 AI API 接入平台，统一审批、Key 分发、多模型路由与调用审计）和 **cc-go** **codex-go**（通过微信机器人远程接管 Claude Code+Codex，支持手机端权限审批、会话管理与 AI 回复推送）。
 - 工作重点是 **系统边界、链路可追踪性、质量控制、失败恢复、评估闭环与长期维护成本**。
 
 ## AI 工程能力
 
 - **AI 应用系统化落地**：围绕 RAG、Agent Workflow、多模型接入与工具调用构建完整链路，覆盖可追踪、可回放、可干预。
+- **企业级模型接入治理**：如 AI Gateway 提供 OpenAI 兼容统一出口，覆盖租户审批、平台 API Key 生命周期、多上游路由、调用观测与费用配额。
+- **Agent 终端远程化**：cc-go 通过 stream-json 桥接 Claude Code CLI，把权限审批、会话切换与输出推送扩展到微信与 Web 控制台。
 - **后端与平台整合能力**：能够把 AI 能力嵌入权限体系、租户隔离、任务编排、异步处理与管理后台，形成可运营的业务系统。
 - **生产可用性与交付质量**：重视评估、日志、失败重试、结果校验、部署文档与线上排障，把 AI 系统做成可维护资产。
 - **云原生与资源治理背景**：具备 Kubernetes、资源调度、服务治理与平台工程经验，能从基础设施视角思考 AI 系统的伸缩性、可靠性与运行成本。
@@ -29,6 +32,7 @@
 ## 技术领域
 
 - **AI 系统**：`RAG`、`Agent Workflow`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
+- **平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`codex-go`（Go / React / WebSocket，Codex 远程编码）
 - **后端工程**：`Python`、`Go`、`Django`、`DRF`、`Flask`、`Gin`、`gRPC`、`MySQL`、`PostgreSQL`、`Redis`、`Elasticsearch`
 - **平台与基础设施**：`Docker`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Istio`、`Prometheus`、`OpenStack`
 - **前端与交付**：`Vue 3`、`React`、`TypeScript`、`Vite`、`Umi`、`Playwright`、`Docker Compose`
@@ -94,13 +98,13 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 6. 分类与叙词服务
+### 6. 智能分类服务
 
-> 基于 LangGraph 的科技文献叙词标注与智能分类系统
+> 基于 LangGraph 的科技文献智能分类系统
 
-- **关键问题**：分类与叙词涵盖关键词抽取、知识库匹配、联网增强、LLM 验证、格式约束与失败兜底等多阶段工作流。
-- **我的实现**：基于 `Django`、`DRF`、`LangGraph`、`Weaviate`、`RAGFlow`、`Volcano Ark` 与 `DashScope` 将叙词流程与分类流程分离设计，形成可追踪、可纠错、可扩展的链路。
-- **工程价值**：通过多源检索融合、流程可观测、结果纠错与结构化约束，提升分类与叙词任务的关键字段准确率，并形成可扩展的质量优化闭环。
+- **关键问题**：智能分类涵盖关键词抽取、知识库匹配、联网增强、LLM 验证、格式约束与失败兜底等多阶段工作流。
+- **我的实现**：基于 `Django`、`DRF`、`LangGraph`、`Weaviate`、`RAGFlow`、`Volcano Ark` 与 `DashScope` 组织分类工作流，形成可追踪、可纠错、可扩展的链路。
+- **工程价值**：通过多源检索融合、流程可观测、结果纠错与结构化约束，提升智能分类任务的关键字段准确率，并形成可扩展的质量优化闭环。
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
@@ -134,6 +138,7 @@
 ## 经验概览
 
 - 当前主要方向是 **AI 应用工程与平台工程的结合**，包括知识系统、分类标引、情报处理平台和算力治理平台。
+- 已落地 **AI Gateway**（面向企业与团队的租户制 AI API 接入平台，统一多模型出口、Key 治理与调用审计）和 **codex-go**（通过微信机器人远程接管 Codex，支持手机端权限审批、会话切换与 Docker 化部署）。
 - 具备 **OpenStack 公有云、Kubernetes 平台、网络升级、网络安全靶场与复杂业务系统** 的持续工程经验。
 - 长期关注 **AI 系统如何真正进入生产环境**，以及如何在复杂基础设施中保持稳定、可维护和可演进。
 
