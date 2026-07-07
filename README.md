@@ -4,7 +4,7 @@
 
 **AI 应用与平台工程实践者**
 
-聚焦 **RAG、Agent Workflow、知识系统、分类标引、情报处理平台、Kubernetes 平台工程与算力治理**
+聚焦 **RAG、Agent Workflow、AI Coding、信息采集、知识系统、多模型治理、Kubernetes 平台工程与算力治理**
 
 [![GitHub](https://img.shields.io/badge/GitHub-QEDQCD-181717?style=flat-square&logo=github)](https://github.com/QEDQCD)
 [![Email](https://img.shields.io/badge/Email-594253850%40qq.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:594253850@qq.com)
@@ -16,8 +16,7 @@
 
 - 5 年开发经验，长期聚焦 **AI 应用工程、后端系统建设与云原生平台实践**，关注如何把模型能力落到真实业务流程中。
 - 擅长把 **检索、工作流、模型调用、权限体系、任务机制、部署交付** 打通，做成可上线、可维护、可持续迭代的工程系统。
-- 过去的实践覆盖 **RAG 平台、智能分类服务、多 Agent 情报处理平台、Kubernetes 算力云平台、OpenStack 公有云与复杂业务平台**。
-- 近期落地 **AI Gateway**（面向企业与团队的租户制 AI API 接入平台，统一审批、Key 分发、多模型路由与调用审计）和 **cc-go** **codex-go**（通过微信机器人远程接管 Claude Code+Codex，支持手机端权限审批、会话管理与 AI 回复推送）。
+- 主导并深度参与 **AI Gateway**、**cc-go / codex-go**、**claude-token-stats**、**RAG 智能助理平台**、**LangGraph 智能分类 Agent**、**多源信息采集与智能处理平台（情报工坊）**、**Kubernetes 算力云平台** 与 **OpenStack 公有云** 等系统从设计到交付的全链路工程落地。
 - 工作重点是 **系统边界、链路可追踪性、质量控制、失败恢复、评估闭环与长期维护成本**。
 
 ## AI 工程能力
