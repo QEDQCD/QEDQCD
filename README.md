@@ -23,8 +23,9 @@
 ## AI 工程能力
 
 - **AI 应用系统化落地**：围绕 RAG、Agent Workflow、多模型接入与工具调用构建完整链路，覆盖可追踪、可回放、可干预。
-- **企业级模型接入治理**：如 AI Gateway 提供 OpenAI 兼容统一出口，覆盖租户审批、平台 API Key 生命周期、多上游路由、调用观测与费用配额。
-- **Agent 终端远程化**：cc-go 通过 stream-json 桥接 Claude Code CLI，把权限审批、会话切换与输出推送扩展到微信与 Web 控制台。
+- **AI Coding 与 Harness Engineering**：研读 Claude Code CLI 源码，理解基于 Harness 的 Agent 架构（TAOR 循环、工具调用、MCP、Skills、Memory、Context 压缩与权限门控）；cc-go / codex-go 将 Claude Code、Codex CLI 从本机终端扩展到微信与 Web 远程审批、会话管理与输出推送。
+- **AI 辅助编程实践**：日常使用 Cursor、Claude、Codex 等工具，结合 vibe coding 与 Harness/Loop Engineering 范式，在平台开发与业务交付中持续提升编码效率与工程质量。
+- **企业级模型接入治理**： AI Gateway 提供 OpenAI 兼容统一出口，覆盖租户审批、平台 API Key 生命周期、多上游路由、调用观测与费用配额。
 - **后端与平台整合能力**：能够把 AI 能力嵌入权限体系、租户隔离、任务编排、异步处理与管理后台，形成可运营的业务系统。
 - **生产可用性与交付质量**：重视评估、日志、失败重试、结果校验、部署文档与线上排障，把 AI 系统做成可维护资产。
 - **云原生与资源治理背景**：具备 Kubernetes、资源调度、服务治理与平台工程经验，能从基础设施视角思考 AI 系统的伸缩性、可靠性与运行成本。
@@ -32,7 +33,8 @@
 ## 技术领域
 
 - **AI 系统**：`RAG`、`Agent Workflow`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
-- **自研平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`cc-go`（Go / React / WebSocket，Claude Code 远程编码）
+- **AI Coding / Harness**：`Claude Code`、`Codex CLI`、`Harness Engineering`、`Skills`、`Cursor`、`stream-json`、权限门控
+- **自研平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`cc-go` / `codex-go`（Go / React / WebSocket，AI Coding 远程桥接）
 - **后端工程**：`Python`、`Go`、`Django`、`DRF`、`Flask`、`Gin`、`gRPC`、`MySQL`、`PostgreSQL`、`Redis`、`Elasticsearch`
 - **平台与基础设施**：`Docker`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Istio`、`Prometheus`、`OpenStack`
 - **前端与交付**：`Vue 3`、`React`、`TypeScript`、`Vite`、`Umi`、`Playwright`、`Docker Compose`
@@ -78,13 +80,13 @@
 
 [项目地址](https://github.com/QEDQCD/codex-go)
 
-### 4. 情报工坊 / Intelligence Workshop
+### 4. 多源信息采集与智能处理平台
 
-> 面向情报采集、翻译、导入导出与交付流程的多租户业务平台
+> 情报工坊（Intelligence Workshop），覆盖采集、解析、翻译、入库、监控与交付全链路
 
-- **关键问题**：需要同时处理租户隔离、RBAC、采集任务管理、翻译流程编排、批量导入导出与失败重放，不能只做单点功能。
-- **我的实现**：基于 `Django`、`DRF`、`Vue 3`、`PostgreSQL`、`Redis` 与 `Playwright` 搭建完整平台，并通过独立 `crawler_agent` 支持 RSS、Sitemap、HTML 列表页与动态页面抓取，形成“中心配置 + 边缘执行”的采集模式。
-- **工程价值**：把情报采集、翻译处理、知识沉淀与交付流程整合为可运营、可管理、可追踪的业务平台，替代离散脚本与人工驱动流程。
+- **关键问题**：多源情报（Web Search、爬虫、结构化数据源、社交平台）接入方式各异，需统一入库、翻译、质量监控与业务域分析，不能拆成彼此割裂的脚本与单点工具。
+- **我的实现**：基于 `Django`、`DRF`、`Vue 3`、`TypeScript`、`PostgreSQL` 与 `Redis` 搭建中心编排平台，采用"中心配置 + 边缘执行"模式——中心侧维护采集任务、Web Search Provider、`push-data` 入库与状态机，边缘侧 `crawler_agent` 独立运行 RSS/Sitemap/Playwright 抓取；落地多引擎翻译（LLM + Google/Baidu 兜底）、PDF OCR（MinerU + 视觉 LLM）、汽车情报（MIIT/懂车帝/CPCA/CAAM）与场景库（小红书 MCP + B 站 → LLM 提炼 → 飞书推送）等业务模块。
+- **工程价值**：打通 Web Search / 爬虫 Agent / 结构化数据源三类采集入口，统一收敛到自动翻译与导入导出链路；汽车场景库全链路实测通过，场景卡片可沉淀为可检索、可复盘、可交付的结构化情报资产。
 
 [项目地址](https://github.com/QEDQCD/ai_translate)
 
@@ -98,7 +100,7 @@
 
 [项目地址](https://github.com/QEDQCD/claude_token_stats)
 
-### 6. RAGFlow 智能知识增强平台
+### 6. 基于RAG的智能助理平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -110,7 +112,7 @@
 
 ### 7. 智能分类服务
 
-> 基于 LangGraph 的科技文献智能分类系统
+> 基于 LangGraph 的智能分类Agent
 
 - **关键问题**：智能分类涵盖关键词抽取、知识库匹配、联网增强、LLM 验证、格式约束与失败兜底等多阶段工作流。
 - **我的实现**：基于 `Django`、`DRF`、`LangGraph`、`Weaviate`、`RAGFlow`、`Volcano Ark` 与 `DashScope` 组织分类工作流，形成可追踪、可纠错、可扩展的链路。
@@ -126,18 +128,6 @@
 - **我的实现**：基于 `Go`、`Gin`、`gRPC`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Kube-OVN`、`Istio`、`Knative` 与 `Crossplane` 参与弹性伸缩、虚拟机生命周期、网络与网关、监控告警、资源治理等核心能力建设。
 - **工程价值**：提供覆盖计算、网络、存储与调度的算力治理能力，为上层业务系统提供弹性伸缩、可靠性保障与成本控制基础。
 
-[项目地址](https://github.com/QEDQCD/zhusujin-skill)
-
-### 9. free-code
-
-> 面向终端原生 AI Coding Agent 的可构建分叉，探索多提供方接入与能力扩展
-
-- **关键问题**：AI Coding Agent 涉及终端交互、后端适配、能力扩展与可审计构建链路，超出模型切换本身。
-- **我的实现**：基于 `TypeScript`、`Bun`、`React`、`Ink` 与多模型后端接入，完成 Codex 适配、UI 推理状态对齐，以及 agent / skill / bridge 的扩展实践。
-- **工程价值**：提供可构建、可扩展的终端原生 AI Coding Agent 基础，支持多模型后端接入，以及 agent、skill、bridge 等能力扩展。
-
-[项目地址](https://github.com/QEDQCD/free-code)
-
 ## 工程判断
 
 - 设计 AI 系统时，会同时看 **检索质量、工作流可追踪性、结果一致性与系统可控性**。
@@ -147,7 +137,7 @@
 
 ## 经验概览
 
-- 当前主要方向是 **AI 应用工程与平台工程的结合**，包括知识系统、分类标引、情报处理平台和算力治理平台。
+- 当前主要方向是 **AI 应用工程与平台工程的结合**，包括知识系统、信息采集、情报处理平台、AI Coding 和算力治理平台。
 - 具备 **OpenStack 公有云、Kubernetes 平台、网络升级、网络安全靶场与复杂业务系统** 的持续工程经验。
 - 长期关注 **AI 系统如何真正进入生产环境**，以及如何在复杂基础设施中保持稳定、可维护和可演进。
 
