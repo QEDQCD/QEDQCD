@@ -33,7 +33,6 @@
 
 - **AI 系统**：`RAG`、`Agent Workflow`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
 - **AI Coding / Harness**：`Claude Code`、`Codex CLI`、`Harness Engineering`、`Skills`、`Cursor`、`stream-json`、权限门控
-- **自研平台产品**：`AI Gateway`（Go / React / PostgreSQL，多租户 AI 网关）、`cc-go` / `codex-go`（Go / React / WebSocket，AI Coding 远程桥接）
 - **后端工程**：`Python`、`Go`、`Django`、`DRF`、`Flask`、`Gin`、`gRPC`、`MySQL`、`PostgreSQL`、`Redis`、`Elasticsearch`
 - **平台与基础设施**：`Docker`、`Kubernetes`、`Kubebuilder`、`KubeVirt`、`Istio`、`Prometheus`、`OpenStack`
 - **前端与交付**：`Vue 3`、`React`、`TypeScript`、`Vite`、`Umi`、`Playwright`、`Docker Compose`
