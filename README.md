@@ -22,8 +22,7 @@
 ## AI 工程能力
 
 - **AI 应用系统化落地**：围绕 RAG、Agent Workflow、多模型接入与工具调用构建完整链路，覆盖可追踪、可回放、可干预。
-- **AI Coding 与 Harness Engineering**：研读 Claude Code CLI 源码，理解基于 Harness 的 Agent 架构（TAOR 循环、工具调用、MCP、Skills、Memory、Context 压缩与权限门控）；编码工具微信端代理将 Claude Code、Codex CLI 从本机终端扩展到微信与 Web 远程审批、会话管理与输出推送。
-- **AI 辅助编程实践**：日常使用 Cursor、Claude、Codex 等工具，结合 vibe coding 与 Harness/Loop Engineering 范式，在平台开发与业务交付中持续提升编码效率与工程质量。
+- **AI Coding 与 Harness Engineering**：研读 Claude Code CLI 源码，理解 Harness Agent 架构（TAOR 循环、工具调用、MCP、Skills、Memory、Context 压缩与权限门控）；日常以 Cursor、Claude、Codex 结合 vibe coding 与 Harness/Loop Engineering 范式推进开发与交付；编码工具微信端代理将 Claude Code、Codex CLI 从本机终端扩展到微信与 Web，支持远程审批、会话管理与输出推送。
 - **企业级模型接入治理**：AI 网关提供 OpenAI 兼容统一出口，覆盖租户审批、平台 API Key 生命周期、多上游路由、调用观测与费用配额。
 - **后端与平台整合能力**：能够把 AI 能力嵌入权限体系、租户隔离、任务编排、异步处理与管理后台，形成可运营的业务系统。
 - **生产可用性与交付质量**：重视评估、日志、失败重试、结果校验、部署文档与线上排障，把 AI 系统做成可维护资产。
