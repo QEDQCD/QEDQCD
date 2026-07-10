@@ -92,7 +92,7 @@
 > 面向 Claude Code 与 Codex CLI 的本机 token 用量自动记录与多维度统计 skill，支持自然语言触发与统一报告
 
 - **关键问题**：Claude Code 与 Codex 的 token 消耗分散在各自会话日志中，缺少按天/周/月汇总与跨工具对比，难以评估使用成本与优化方向。
-- **我的实现**：Claude 侧基于 `Python` 与 Claude Code Stop hook，会话结束时自动提取 assistant 消息的 `usage` 并去重写入 `~/.claude/token_usage.jsonl`；Codex 侧读取 `~/.codex/sessions/` 中 `token_count` 事件累计值并计算 delta，无需额外 hook。提供 `token-report` 统一报告（今日/本月/全部 + 按天明细）、`codex-token-stats` 分项统计，支持本地时区、日期区间过滤及 `--codex-only` 单 CLI 安装。
+- **我的实现**：基于 `Python` 自动采集 Claude Code 与 Codex CLI 的本机 token 用量，提供统一报告与按天/周/月统计。
 - **工程价值**：将 Claude 与 Codex 的 token 用量从不可见的会话细节转化为可查询、可对比的本地数据资产；导入 skill 后可直接问「本月用了多少 token」「Claude 和 Codex 各用了多少」「按天明细」。
 
 [项目地址](https://github.com/QEDQCD/claude_token_stats)
