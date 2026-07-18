@@ -97,7 +97,27 @@
 
 [项目地址](https://github.com/QEDQCD/claude_token_stats)
 
-### 6. 基于RAG的智能助理平台
+### 6. claude-auto-approve
+
+> Claude Code skill：基于 `PreToolUse` hook，对安全命令自动放行、危险命令强制确认、未知命令保持默认弹窗
+
+- **关键问题**：Claude Code 每次工具调用都弹权限确认，安全命令反复点选打断节奏；若一律跳过审批，又容易误放行 `rm -rf`、`sudo` 等危险操作。
+- **我的实现**：用白名单 / 危险名单两份正则驱动 `PreToolUse` hook，判定优先级为危险(ask) > 白名单(allow) > 默认人工；规则可按项目增删，导入 skill 后可用自然语言触发配置与调整。
+- **工程价值**：在「少打断」与「危险操作仍人工把关」之间取得平衡，把权限门控做成可定制、可对话调整的本地工程资产。
+
+[项目地址](https://github.com/QEDQCD/claude-auto-approve)
+
+### 7. claude-secret
+
+> Claude Code CLI 本地 token 加密方案：AES-256-CBC 密文落盘，启动时输密码解锁，进程退出后明文立即清除
+
+- **关键问题**：多人共用机器或担心 `~/.bashrc`、history、备份泄露时，不希望把 `ANTHROPIC_AUTH_TOKEN` 以明文常驻环境，又不想上 KMS 等重方案。
+- **我的实现**：用 `openssl`（AES-256-CBC + PBKDF2）把 token 加密为 `token.enc`，通过 shell 包装函数拦截 `claude` 命令——每次启动交互式解锁，token 只活在本次进程内。
+- **工程价值**：以轻量本地方案降低 token 明文残留风险，安装 / 换密 / 卸载流程完整，适合本机与共享环境的日常防护。
+
+[项目地址](https://github.com/QEDQCD/claude-secret)
+
+### 8. 基于RAG的智能助理平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -107,7 +127,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 7. 智能分类服务
+### 9. 智能分类服务
 
 > 基于 LangGraph 的智能分类Agent
 
@@ -117,7 +137,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 8. AI cloud
+### 10. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
