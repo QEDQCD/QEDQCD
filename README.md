@@ -107,17 +107,7 @@
 
 [项目地址](https://github.com/QEDQCD/claude-auto-approve)
 
-### 7. claude-secret
-
-> Claude Code CLI 本地 token 加密方案：AES-256-CBC 密文落盘，启动时输密码解锁，进程退出后明文立即清除
-
-- **关键问题**：多人共用机器或担心 `~/.bashrc`、history、备份泄露时，不希望把 `ANTHROPIC_AUTH_TOKEN` 以明文常驻环境，又不想上 KMS 等重方案。
-- **我的实现**：用 `openssl`（AES-256-CBC + PBKDF2）把 token 加密为 `token.enc`，通过 shell 包装函数拦截 `claude` 命令——每次启动交互式解锁，token 只活在本次进程内。
-- **工程价值**：以轻量本地方案降低 token 明文残留风险，安装 / 换密 / 卸载流程完整，适合本机与共享环境的日常防护。
-
-[项目地址](https://github.com/QEDQCD/claude-secret)
-
-### 8. 基于RAG的智能助理平台
+### 7. 基于RAG的智能助理平台
 
 > 面向复杂文档理解、知识库构建、检索增强生成与图谱推理的一体化平台
 
@@ -127,7 +117,7 @@
 
 [项目地址](https://github.com/QEDQCD/INIS)
 
-### 9. 智能分类服务
+### 8. 智能分类服务
 
 > 基于 LangGraph 的智能分类Agent
 
@@ -137,7 +127,7 @@
 
 [项目地址](https://github.com/QEDQCD/inis_classify)
 
-### 10. AI cloud
+### 9. AI cloud
 
 > 基于 Kubernetes 的算力调度与资源治理平台
 
