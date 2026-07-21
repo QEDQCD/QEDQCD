@@ -19,6 +19,7 @@
 - 主导设计并实现企业侧多模型接入：统一鉴权、路由、调用观测、API Key 与费用配额（AI 网关）。
 - 主导设计并实现 RAG / Agent 相关系统：文档解析、混合检索、GraphRAG、LangGraph 工作流与工具调用。
 - 有 Kubernetes 与 OpenStack 背景，能从部署、观测和资源成本角度看 AI 系统。
+
 ## 技术栈
 
 - AI：`RAG`、`LangGraph`、`LangChain`、`GraphRAG`、`MCP`、`Weaviate`、`RAGFlow`、`vLLM`
