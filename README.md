@@ -67,6 +67,8 @@ Claude Code、Codex 交互通常绑在本机终端，离开电脑后不便审批
 
 - [claude-token-stats](https://github.com/QEDQCD/claude_token_stats)：本机统计 Claude Code / Codex CLI 的 token 用量（按天/周/月）
 - [claude-auto-approve](https://github.com/QEDQCD/claude-auto-approve)：Claude Code `PreToolUse` hook，白名单自动放行、危险命令强制确认
+- [claude-ocr-vision](https://github.com/QEDQCD/claude-ocr-vision)：给纯文本模型「看图」——`PreToolUse` 拦截读图，改走本地 RapidOCR，支持 Claude Code / Codex CLI
+- [claude-secret](https://github.com/QEDQCD/claude-secret)：本地加密 Claude Code token（AES-256-CBC），每次启动解密注入，退出后清掉明文
 - [智能分类服务](https://github.com/QEDQCD/inis_classify)：基于 LangGraph 的分类 Agent（检索、验证、格式约束与失败兜底）
 - AI cloud：基于 Kubernetes 的算力调度与资源治理（`Kubebuilder`、`KubeVirt`、`Istio` 等）
 
